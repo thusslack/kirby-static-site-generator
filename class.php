@@ -65,8 +65,6 @@ class StaticSiteGenerator
   {
     $this->_setOriginalBaseUrl();
 
-    $baseUrl = rtrim($baseUrl, '/') . '/';
-
     $copyMedia = !$this->_skipCopyingMedia;
     $copyMedia && StaticSiteGeneratorMedia::setActive(true);
 
